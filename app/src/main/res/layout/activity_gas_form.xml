@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GasFormActivity">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ActualKm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="613dp"
+        android:hint="Quilometragem atual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/QtdInsertion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Litros abastecidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ActualKm"
+        app:layout_constraintVertical_bias="0.024"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <EditText
+        android:id="@+id/datePicker"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QtdInsertion"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Spinner
+        android:id="@+id/gasStationSpinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:text="Salvar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasStationSpinner"
+        app:layout_constraintVertical_bias="0.912" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
